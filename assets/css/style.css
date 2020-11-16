@@ -1,0 +1,25 @@
+header,
+main,
+footer {
+    padding-left: 300px;
+}
+
+.tweet-text{
+    margin-left: 60px !important;
+}
+
+@media only screen and (max-width: 992px){
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+
+    .nav-wrapper {
+        display: flex;
+    }
+
+    .nav-wrapper form {
+        width: 100%;
+    }
+}

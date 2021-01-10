@@ -18,8 +18,8 @@
       <a href="#name"><span class="black-text name">John Doe</span></a>
       <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
     </div></li>
-    <li><a href="#!" class=" waves-effect waves-light btn  light-blue"><i class="material-icons">add_task</i>Add Task</a></li>
-    <li><a href="#! " class="waves-effect waves-light btn  light-blue"><i class="material-icons">addchart</i>Add Calendar</a></li>
+    <li><a href="#addTask" class=" waves-effect waves-light btn modal-trigger light-blue"><i class="material-icons">add_task</i>Add Task</a></li>
+    <li><a href="#addCalendar" class="waves-effect waves-light btn modal-trigger light-blue"><i class="material-icons">addchart</i>Add Calendar</a></li>
     <li><a href="monthly_calendar.html" class=" waves-effect waves-light btn light-blue darken-3"><i class="material-icons">calendar_today</i>See Month</a></li>
     <li><a href="weekly_calendar.html" class=" waves-effect waves-light btn light-blue darken-3"><i class="material-icons">date_range</i>See Week</a></li>
     <li><a href="daily_calendar.html" class=" waves-effect waves-light btn light-blue darken-3"><i class="material-icons">today</i>See Day</a></li>
@@ -60,7 +60,7 @@
                 </div>
     
                 <div class="input-field col m4">
-                  <a href="#!" style="margin-top: 10px;" class="waves-effect waves-light cyan btn btn-block light-blue"><i class="material-icons">addchart</i>Add Task</a>
+                  <a href="#addTask" style="margin-top: 10px;" class="waves-effect waves-light cyan btn btn-block light-blue modal-trigger"><i class="material-icons">addchart</i>Add Task</a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,9 @@
                 <div class="dailyHeader">
                   <h5 style="text-align: center; padding-top: 1.5%; margin-top: 0;">Monday</h3>
                 </div>
-                <div class="test valign-wrapper " style="position: absolute;top: 25%;left: 5%;"><h6 class="">Examen ISO</h6></div>
+                <a href="#seeTask" style="color: black;" class="modal-trigger">
+                  <div class="test valign-wrapper " style="position: absolute;top: 25%;left: 5%;"><h6 class="">Examen ISO</h6></div>
+                </a>
                 <div class="test z-depth-4 valign-wrapper " style="position: absolute; top: 45%; left: 15%"><h6>Examen Paralela</h6></div>
                 <div class="appointment valign-wrapper"  style="position: absolute; top: 45%; right: 15%;"><h6>Reservar Gym</h6></div>
             </div>
@@ -77,21 +79,222 @@
     </div>
     
   </main>      
-  <div id="modal1" class="modal">
+  <div id="addTask" class="modal">
     <div class="modal-content">
      <div class="row">
       <div class="col s12">
         <a class="waves-effect waves-light btn-flat modal-close" href=""><i class="material-icons left">arrow_back</i>Back</a>
       </div>
-       <div class="col s12"><h5>Tweet about something</h5></div>
-       <div class="input-field col s12">
-         <textarea id="tweet" class="materialize-textarea" data-length="140"></textarea>
-         <label for="tweet">What are you thinking?</label>
+     </div>
+     <div class="row">
+       <div class="col s12"><h3 style="text-align: center;">Add Task</h3></div>
+      <div class="col s3"></div>
+       <div class="input-field col s6">
+         <input type="text" id="tweet" ></textarea>
+         <label for="tweet">Task Name</label>
        </div>
+       <div class="col s3"></div>
+      </div>
+      <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+         <textarea id="tweet" class="materialize-textarea" data-length="140"></textarea>
+         <label for="tweet">Task Name</label>
+       </div>
+       <div class="col s3"></div>
+     </div>
+     <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+        <input type="text" id="daily" class="datepicker">
+        <label for="daily" class="label">Date</label>
+       </div>
+       <div class="col s3"></div>
+     </div>
+     <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Calendar</option>
+          <option value="1">Tasks</option>
+          <option value="2">Appointments</option>
+          <option value="3">Travels</option>
+      </select>              
+       </div>
+       <div class="col s3"></div>
      </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn">Submit</a>
+    </div>
+  </div>
+
+  <div id="seeTask" class="modal">
+    <div class="modal-content">
+     <div class="row">
+      <div class="col s12">
+        <a class="waves-effect waves-light btn-flat modal-close" href=""><i class="material-icons left">arrow_back</i>Back</a>
+      </div>
+     </div>
+     <div class="row">
+       <div class="col s12"><h3 style="text-align: center;">Task</h3></div>
+      <div class="col s3"></div>
+       <div class="input-field col s6">
+         <input type="text" id="tweet" placeholder="Examen ISO">
+         <label for="tweet">Task Name</label>
+       </div>
+       <div class="col s3"></div>
+      </div>
+      <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+         <textarea id="tweet" class="materialize-textarea" data-length="140">Examen de ISO temas 1 2 y 3</textarea>
+         <label for="tweet">Task Description</label>
+       </div>
+       <div class="col s3"></div>
+     </div>
+     <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+        <input type="text" id="daily2" class="datepicker">
+        <label for="daily" class="label">Date</label>
+       </div>
+       <div class="col s3"></div>
+     </div>
+     <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+        <select>
+          <option value="" disabled >Calendar</option>
+          <option value="1" selected>Tasks</option>
+          <option value="2">Appointments</option>
+          <option value="3">Travels</option>
+      </select>              
+       </div>
+       <div class="col s3"></div>
+     </div><div id="addCalendar" class="modal">
+      <div class="modal-content">
+       <div class="row">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn-flat modal-close" href=""><i class="material-icons left">arrow_back</i>Back</a>
+        </div>
+       </div>
+       <div class="row">
+         <div class="col s12"><h3 style="text-align: center;">Add Calendar</h3></div>
+        <div class="col s3"></div>
+         <div class="input-field col s6">
+           <input type="text" id="tweet" ></textarea>
+           <label for="tweet">Calendar Name</label>
+         </div>
+         <div class="col s3"></div>
+        </div>
+        <div class="row">
+         <div class="col s3"></div>
+         <div class="input-field col s6">
+           <input id="tweet" type="text" placeholder="#FFFFFF" >
+           <label for="tweet">Calendar Color</label>
+         </div>
+         <div class="col s3"></div>
+       </div>
+    
+       <div class="row" style="margin-bottom: 25px;">
+         <div class="col s3"></div>
+         <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Calendar Style</option>
+            <option value="1">Solid</option>
+            <option value="2">Pointed</option>
+            <option value="3">Striped</option>
+        </select>              
+         </div>
+         <div class="col s3"></div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn">Submit</a>
+      </div>
+    </div>waves-effect waves-green btn">Submit</a>
+    </div>
+  </div>
+
+  <div id="addCalendar" class="modal">
+    <div class="modal-content">
+     <div class="row">
+      <div class="col s12">
+        <a class="waves-effect waves-light btn-flat modal-close" href=""><i class="material-icons left">arrow_back</i>Back</a>
+      </div>
+     </div>
+     <div class<div id="addCalendar" class="modal">
+      <div class="modal-content">
+       <div class="row">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn-flat modal-close" href=""><i class="material-icons left">arrow_back</i>Back</a>
+        </div>
+       </div>
+       <div class="row">
+         <div class="col s12"><h3 style="text-align: center;">Add Calendar</h3></div>
+        <div class="col s3"></div>
+         <div class="input-field col s6">
+           <input type="text" id="tweet" ></textarea>
+           <label for="tweet">Calendar Name</label>
+         </div>
+         <div class="col s3"></div>
+        </div>
+        <div class="row">
+         <div class="col s3"></div>
+         <div class="input-field col s6">
+           <input id="tweet" type="text" placeholder="#FFFFFF" >
+           <label for="tweet">Calendar Color</label>
+         </div>
+         <div class="col s3"></div>
+       </div>
+    
+       <div class="row" style="margin-bottom: 25px;">
+         <div class="col s3"></div>
+         <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Calendar Style</option>
+            <option value="1">Solid</option>
+            <option value="2">Pointed</option>
+            <option value="3">Striped</option>
+        </select>              
+         </div>
+         <div class="col s3"></div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn">Submit</a>
+      </div>
+    </div>nput-field col s6">
+         <input type="text" id="tweet" ></textarea>
+         <label for="tweet">Calendar Name</label>
+       </div>
+       <div class="col s3"></div>
+      </div>
+      <div class="row">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+         <input id="tweet" type="text" placeholder="#FFFFFF" >
+         <label for="tweet">Calendar Color</label>
+       </div>
+       <div class="col s3"></div>
+     </div>
+  
+     <div class="row" style="margin-bottom: 25px;">
+       <div class="col s3"></div>
+       <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Calendar Style</option>
+          <option value="1">Solid</option>
+          <option value="2">Pointed</option>
+          <option value="3">Striped</option>
+      </select>              
+       </div>
+       <div class="col s3"></div>
+     </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn">Submit</a>
     </div>
   </div>
 
@@ -114,9 +317,11 @@
     var elems = document.querySelectorAll('.datepicker');
     var instances = M.Datepicker.init(elems);
     var instance = instances[0];
-
+    var instance2 = instances[2]
     instance.setDate( new Date() );
     instance._finishSelection();
+    instance2.setDate( new Date() );
+    instance2._finishSelection();
   </script>
   </body>
 </html>

@@ -24,6 +24,8 @@ footer {
     }
 }
 
+
+
 #buttons {
     height: 50px;
     width: 700px;
@@ -80,7 +82,7 @@ footer {
 
 .weeklyTest{
     height: 75px;
-    width: 125px;
+    width: 90px;
     justify-content: center;
     text-align: center;
     background-color: #ef5350;
@@ -89,7 +91,7 @@ footer {
 
 .weeklyAppointment {
     height: 75px;
-    width: 125px;
+    width: 90px;
     justify-content: center;
     text-align: center;
     border: 1px dotted #42a5f5;

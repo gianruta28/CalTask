@@ -14,7 +14,7 @@
 
   <ul id="slide-out" class="sidenav sidenav-fixed" style="padding: 10px;">
     <li><div class="user-view" style=" text-align: center !important;" >
-      <a href="#user" ><img class="circle" src="../assets/img/yuna.jpg" style="display: inline;"></a>
+      <a href="#user" ><img class="circle" src="../assets/img/yuna.png" style="display: inline;"></a>
       <a href="#name"><span class="black-text name">CalTask Team</span></a>
       <a href="#email"><span class="black-text email">CalTask@gmail.com</span></a>
     </div></li>
@@ -43,7 +43,7 @@
     </nav> 
     
     <div class="container">
-        <div class="row" style="margin-top: 15%; display: flex; margin-bottom: 5px; justify-content: space-between !important;" >
+        <div class="row" style="margin-top: 10%; display: flex; margin-bottom: 5px; justify-content: space-between !important;" >
             <div class="input-field col m4" >
                 <select>
                   <option value="" disabled selected>Choose Theme</option>
@@ -115,7 +115,7 @@
     </div>
     
   </main>      
-  <div id="addTask" class="modal">
+  <div id="addTask" class="modal" style="max-height: 100%;">
     <div class="modal-content">
      <div class="row">
       <div class="col s12">
@@ -130,6 +130,14 @@
          <label for="tweet">Task Name</label>
        </div>
        <div class="col s3"></div>
+      </div>
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
+          <textarea id="tweet" class="materialize-textarea" data-length="140">Examen...Evento..Tareas...</textarea>
+          <label for="tweet">Task Description</label>
+        </div>
+        <div class="col s3"></div>
       </div>
       <div class="row">
        <div class="col s3"></div>
@@ -165,7 +173,7 @@
     </div>
   </div>
 
-  <div id="seeTask" class="modal">
+  <div id="seeTask" class="modal" style="max-height: 100%;">
     <div class="modal-content">
      <div class="row">
       <div class="col s12">
@@ -189,6 +197,14 @@
        </div>
        <div class="col s3"></div>
      </div>
+     <div class="row">
+      <div class="col s3"></div>
+      <div class="input-field col s6">
+       <input id="tweet" type="text" placeholder="#FFFFFF" >
+       <label for="tweet">Change Task Color</label>
+     </div>
+      <div class="col s3"></div>
+    </div>
      <div class="row">
        <div class="col s3"></div>
        <div class="input-field col s6">

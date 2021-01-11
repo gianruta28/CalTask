@@ -24,7 +24,7 @@
     <li><a href="weekly_calendar.html" class=" waves-effect waves-light btn light-blue darken-3"><i class="material-icons">date_range</i>See Week</a></li>
     <li><a href="daily_calendar.html" class=" waves-effect waves-light btn light-blue darken-3"><i class="material-icons">today</i>See Day</a></li>
     <br>
-    <li><a class="waves-effect waves-light btn grey darken-3 "><i class="material-icons left">settings</i>Settings</a></li>
+    <li><a href="settings.html" class="waves-effect waves-light btn grey darken-3 "><i class="material-icons left">settings</i>Settings</a></li>
     <li><a href="login.html" class="waves-effect waves-light btn grey darken-3 modal-trigger" ><i class="material-icons left">outbound</i>Log Out</a></li>
   </ul>
   
@@ -46,10 +46,10 @@
         <div class="row" style="margin-top: 15%; display: flex; margin-bottom: 5px; justify-content: space-between !important;" >
             <div class="input-field col m4" >
                 <select>
-                    <option value="" disabled selected>Calendar Type</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                  <option value="" disabled selected>Choose Theme</option>
+                  <option value="1">Solid</option>
+                  <option value="2">Dark</option>
+                  <option value="3">Tech</option>
                 </select>              
             </div>
   
@@ -134,9 +134,9 @@
       <div class="row">
        <div class="col s3"></div>
        <div class="input-field col s6">
-         <textarea id="tweet" class="materialize-textarea" data-length="140"></textarea>
-         <label for="tweet">Task Name</label>
-       </div>
+        <input id="tweet" type="text" placeholder="#FFFFFF" >
+        <label for="tweet">Task Color</label>
+      </div>
        <div class="col s3"></div>
      </div>
      <div class="row">
